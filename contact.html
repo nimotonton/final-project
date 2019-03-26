@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+REQUIREMENTS:
+  Contact Page ------------------------------------------------------------
+      - Provide information that students can use to contact the course instructor
+      - Provide a contact form with the following inputs
+      - Text input for the user’s first name
+      - Text input for the user’s last name
+      - Email input for the user’s email address
+      - Text input for the user’s BCIT student number
+      - A radio button group where a user can select one of the following:
+            • Prospective Student
+            • Current Student
+***   - The form should be validated with either HTML5 validation or JavaScript
+        validation to the following specification
+            • First name input should not be blank
+            • Last name input should not be blank
+            • Email input should not be blank and it should be a valid email         address
+***   - BCIT Student number email can be blank, but if a user does enter
+        a value it should be a valid BCIT student number
+***   - Once the form has passed validation the user should be sent to a form
+        thank you page, letting them know that their data has been sent.
+        Alternatively, a pop-up message can be presented saying their data has
+        been sent
+      - You only need to create the front-end markup and validation of the form.     Do not need to worry about back end processing.
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/form.css">
+  <title>BCIT COMP 1950 Contact</title>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="about-banner"><img class="banner" src="images/bcit-home.jpg" alt="bcit banner"/></a>
+    <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Course Info</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="lessons.html">Lesson</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <div class="teacher-contact">
+      <h3>The course instructor is reachable at the following: </h3>
+
+      <ul>
+        <li><strong>E-mail:</strong> <a href="mailto:michael_whyte@bcit.ca">Michael_Whyte@bcit.ca</a>
+</li>
+        <li><strong>Web site:</strong> <a href="http://michaelwhyte.ca">MichaelWhyte.ca</a>
+</li>
+        <li><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/michaelwhyte">linkedin.com/in/MichaelWhyte</a>
+</li>
+        <li><strong>Twitter:</strong> <a href="http://twitter.com/michaelwhyte">http://twitter.com/MichaelWhyte</a>
+</li>
+        <li><strong>Google+:</strong> <a href="http://plus.google.com/+MichaelWhyte01">Michael Whyte01</a>
+</li>
+        <li><strong>GitHub</strong> <a href="http://github.com/michaelwhyte">Michael Whyte</a>
+</li>
+      </ul>
+
+
+    </div>
+
+  <!-- FORM -->
+  <div class="wrapper wrapper-contact-page">
+    <form action="#" method="post">
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+<br>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+<br>
+          <label for="password">Phone #:</label>
+          <input type="password" id="password" name="user_password">
+<br>
+          <label>What is your BCIT student status?</label>
+<br>
+          <input type="radio" id="yes" value="yes" name="yes">
+          <label for="yes" class="yes">Current</label>
+          <br>
+
+          <input type="radio" id="no" value="no" name="no">
+          <label for="no" class="no">Prospective</label>
+        </fieldset>
+        <fieldset>
+
+          <label>Consent for us to contact you:</label>
+          <p>
+          <a href="https://en.wikipedia.org/wiki/Lorem_ipsum"> View Waiver Form</a>
+        </p>
+          <input type="checkbox" id="waiver_yes" value="waiver_yes" name="waiver_yes">
+          <label class="light" for="waiver_yes">Yes, I agree to this waiver</label>
+          <br>
+
+          <input type="checkbox" id="waiver_no" value="waiver_no" name="waiver_no">
+          <label class="light" for="design">No, I do not agree to this waiver</label>
+          <br>
+
+        </fieldset>
+
+        <fieldset>
+
+          <label for="bio">Comment:</label>
+          <textarea id="comment" name="comment"></textarea>
+        </fieldset>
+        <input class="btn-submit" id="btn-submit" type="submit" value="submit">
+      </form>
+  <!-- FORM ENDS -->
+
+  </main>
+  <footer>
+      <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#0">About</a></li>
+            <li><a href="#0">Course</a></li>
+            <li><a href="#0">Schedule</a></li>
+            <li><a href="#0">Lesson</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+  	<p>&copy; 2019 BCIT</p>
+      <p>For Educational Use Only</p>
+  </footer>
+</body>
+</html>
